@@ -1,6 +1,33 @@
+/* CSS GENERAL */
+
 body {
   background-color: #fcf2d9;
   color: #1f1410;
+  font-family: "Open Sans", "arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 /* HEADER */

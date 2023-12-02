@@ -1,288 +1,475 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="/public/assets/css/reset.css" />
-    <link rel="stylesheet" href="/public/assets/css/general.css" />
-    <title>Immo Prestige</title>
-  </head>
-  <body>
-    <!-- Site Navigation -->
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img
-              src="/public/assets/img/logo.png"
-              alt="Logo Immo Prestige"
-              width="100"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Propriété
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/proprietes/liste-propriete.html"
-                      >Liste des propriétés</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/proprietes/propriete-a-la-une.html"
-                      >Propriétés à la une</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  A propos
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/a-propos/notre-histoire.html"
-                      >Notre histoire</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/a-propos/temoignages-clients.html"
-                      >Témoignages clients</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Prestations
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/prestations/evaluation-proprietes.html"
-                      >Évaluation de propriétés</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/prestations/conseils-investissement-immobilier.html"
-                      >Conseils en investissements immobiliers</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/prestations/gestion-propriete.html"
-                      >Gestion de propriété</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/blog/blog.html"
-                  >Blog</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contact
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="/contact/prendre-rdv.html"
-                      >Prendre RDV</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/contact/faq.html">FAQ</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/"
-                  ><i class="bi bi-search"></i
-                ></a>
-              </li>
-            </ul>
-            <div class="d-flex">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="bi bi-person-circle"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="/profil/mon-profil.html"
-                        >Mon profil</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/profil/admin.html"
-                        >Admin</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/">Déconnexion</a>
-                    </li>
-                  </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="/public/assets/css/reset.css" />
+  <link rel="stylesheet" href="/public/assets/css/general.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https : //fonts.googleapis.com/css2?family= famille= Playfair+Display:ital,wght@0,700;1,700 & display=swap"
+    rel="stylesheet" />
+  <title>Immo Prestige</title>
+</head>
+
+<body>
+  <!-- Site Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/public/assets/img/logo.png" alt="Logo Immo Prestige" width="100" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Propriété
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/proprietes/liste-propriete.html">Liste des propriétés</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="/sign/sign-up.html"
-                    >Inscription</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="/sign/sign-in.html"
-                    >Connexion</a
-                  >
+                <li>
+                  <a class="dropdown-item" href="/proprietes/propriete-a-la-une.html">Propriétés à la une</a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main></main>
-    <footer class="footer mt-5">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-lg-4 text-center">
-            <h4 class="pb-3">Liens rapides</h4>
-            <ul>
-              <li><a href="/">Accueil</a></li>
-              <li>
-                <a href="/proprietes/propriete-a-la-une.html">Propriétés</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                A propos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/a-propos/notre-histoire.html">Notre histoire</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/a-propos/temoignages-clients.html">Témoignages clients</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prestations
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/prestations/evaluation-proprietes.html">Évaluation de propriétés</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/prestations/conseils-investissement-immobilier.html">Conseils en
+                    investissements immobiliers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/prestations/gestion-propriete.html">Gestion de propriété</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/blog/blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/contact/prendre-rdv.html">Prendre RDV</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/contact/faq.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/"><i class="bi bi-search"></i></a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-person-circle"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/profil/mon-profil.html">Mon profil</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/profil/admin.html">Admin</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/">Déconnexion</a>
+                  </li>
+                </ul>
               </li>
-              <li><a href="/a-propos/notre-histoire.html">A propos</a></li>
-              <li>
-                <a href="/prestations/evaluation-proprietes.html"
-                  >Prestations</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/sign/sign-up.html">Inscription</a>
               </li>
-              <li><a href="/blog/blog.html">Blog</a></li>
-              <li><a href="/contact/prendre-rdv.html">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/sign/sign-in.html">Connexion</a>
+              </li>
             </ul>
-          </div>
-          <div class="col-lg-4 text-center">
-            <h4 class="pb-3 title-footer">Informations légales</h4>
-            <ul>
-              <li>
-                <a href="/informations-legales/mentions-legales.html"
-                  >Mentions légales</a
-                >
-              </li>
-              <li>
-                <a href="/informations-legales/politique-confidentialite.html"
-                  >Politique de confidentialité</a
-                >
-              </li>
-              <li>
-                <a href="/informations-legales/cgu.html"
-                  >Conditions générales d'utilisation</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 text-center">
-            <div>
-              <h4 class="pb-3 title-footer">Coordonnées</h4>
-              <p>2 rue des Lilas</p>
-              <p>80000 Amiens - France</p>
-              <p>+33 624 00 00 00</p>
-              <p>contact@immo-prestige.fr</p>
-            </div>
-          </div>
-          <div class="col-12 text-center mt-5">
-            <h4 class="pb-3">Réseaux sociaux</h4>
-            <div class="social-media">
-              <a href="" class="mx-2"><i class="bi bi-facebook"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-instagram"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-linkedin"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-twitter-x"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col-12 text-center mt-5 mb-3 copyright">
-            <p>Copyright @immo-prestige2024 - Tous droits réservés</p>
           </div>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <!-- Home Banner -->
+    <div class="container-fluid no-padding">
+      <div class="container-banner">
+        <div class="container-text">
+          <div class="banner-text">
+            <h1 class="banner-img-h1">Trouvez votre prochain chez-vous parmi notre sélection de propriétés</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Immo Prestige Story -->
+    <section class="immo-prestige-story">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              Explorez Notre Sélection Exclusive de Propriétés
+            </h2>
+          </div>
+          <div class="col-12 immo-prestige-story-text">
+            <p>
+              Parcourez notre catalogue diversifié de propriétés et trouvez celle qui correspond parfaitement à votre
+              style de vie. Que vous recherchiez un appartement cosy au cœur de la ville, une spacieuse maison de
+              famille, ou une luxueuse villa avec vue, notre sélection saura répondre à toutes vos attentes. Utilisez
+              nos filtres pour affiner votre recherche et découvrez votre future demeure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Liste propriété -->
+    <section class="immo-prestige-heart">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">Résultats de Votre Recherche</h2>
+            <p class="pb-4">
+              Trouvez la propriété idéale parmi nos listings qui correspondent à vos critères de recherche. Chaque
+              propriété est présentée avec des informations essentielles pour vous aider à faire votre choix. N’hésitez
+              pas à contacter notre équipe pour plus de détails ou pour organiser une visite.
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- Propriété 1 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/maison-moderne.jpg" alt="Intérieur d'une maison moderne en centre ville"
+                    class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Propriété Moderne en Centre-Ville
+                </h3>
+                <p class="card-text mb-4">
+                  Un bijou d’architecture moderne au cœur de la ville, cette
+                  résidence de 4 chambres allie luxe et commodité, parfaite
+                  pour une vie urbaine élégante.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Propriété 2 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/maison-campagne.jpg" alt="Maison de campagne" class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Charmante Maison de Campagne
+                </h3>
+                <p class="card-text mb-4">
+                  Nichée dans un cadre paisible, cette spacieuse maison de
+                  campagne avec son grand jardin offre une évasion tranquille
+                  de la vie citadine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Propriété 3 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/maison-vue-mer.jpg" alt="Maison avec vur sur la mer"
+                    class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Appartement Vue Mer
+                </h3>
+                <p class="card-text mb-4">
+                  Profitez d’une vue imprenable sur la mer dans cet
+                  appartement lumineux et aéré de 3 chambres, situé à quelques
+                  pas de la plage.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Propriété 4 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/loft-urbain.jpg" alt="Loft urbain" class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Loft Urbain Branché
+                </h3>
+                <p class="card-text mb-4">
+                  Ce loft contemporain, avec ses hauts plafonds et son design
+                  ouvert, est l’incarnation du style urbain dans un quartier
+                  artistique en plein essor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Propriété 5 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/villa-piscine.jpg" alt="Villa luxueuse avec piscine"
+                    class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Villa Luxueuse avec Piscine
+                </h3>
+                <p class="card-text mb-4">
+                  Élégance et raffinement définissent cette villa
+                  exceptionnelle, dotée d’une piscine privée et d’un
+                  aménagement intérieur de haute gamme.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Propriété 6 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/duplex-spacieux.jpg" alt="Duplex familial spacieux"
+                    class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Duplex Familial Spacieux
+                </h3>
+                <p class="card-text mb-4">
+                  Idéal pour les familles, ce duplex spacieux offre de vastes
+                  espaces de vie, un jardin privé et un accès facile aux
+                  écoles et commerces locaux.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Propriété 7 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/villa-piscine.jpg" alt="Villa luxueuse avec piscine"
+                    class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Villa Luxueuse avec Piscine
+                </h3>
+                <p class="card-text mb-4">
+                  Élégance et raffinement définissent cette villa
+                  exceptionnelle, dotée d’une piscine privée et d’un
+                  aménagement intérieur de haute gamme.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Propriété 8 -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="container-card-img">
+                <a href="/proprietes/propriete-a-la-une.html">
+                  <img src="/public/assets/img/duplex-spacieux.jpg" alt="Duplex familial spacieux"
+                    class="card-img-top" />
+                  <div class="overlay">
+                    <div class="overlay-heart">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center pb-3">
+                  Duplex Familial Spacieux
+                </h3>
+                <p class="card-text mb-4">
+                  Idéal pour les familles, ce duplex spacieux offre de vastes
+                  espaces de vie, un jardin privé et un accès facile aux
+                  écoles et commerces locaux.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <nav aria-label="Page navigation">
+            <ul class="pagination pagination-lg justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&lt;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&gt;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    </div>
+  </main>
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <h4 class="pb-3 title-footer">Liens rapides</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li>
+              <a href="/proprietes/propriete-a-la-une.html">Propriétés</a>
+            </li>
+            <li><a href="/a-propos/notre-histoire.html">A propos</a></li>
+            <li>
+              <a href="/prestations/evaluation-proprietes.html">Prestations</a>
+            </li>
+            <li><a href="/blog/blog.html">Blog</a></li>
+            <li><a href="/contact/prendre-rdv.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center">
+          <h4 class="pb-3 title-footer">Informations légales</h4>
+          <ul>
+            <li>
+              <a href="/informations-legales/mentions-legales.html">Mentions légales</a>
+            </li>
+            <li>
+              <a href="/informations-legales/politique-confidentialite.html">Politique de confidentialité</a>
+            </li>
+            <li>
+              <a href="/informations-legales/cgu.html">Conditions générales d'utilisation</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div>
+            <h4 class="pb-3 title-footer">Coordonnées</h4>
+            <p class="text-center">2 rue des Lilas</p>
+            <p class="text-center">80000 Amiens - France</p>
+            <p class="text-center">+33 624 00 00 00</p>
+            <p class="text-center">contact@immo-prestige.fr</p>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-5">
+          <h4 class="pb-3 title-footer">Réseaux sociaux</h4>
+          <div class="social-media">
+            <a href="" class="mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-linkedin"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-12 mt-5 mb-3 copyright">
+          <p class="text-center">Copyright @immo-prestige2024 - Tous droits réservés</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="/public/assets/js/script.js"></script>
+</body>
+
 </html>

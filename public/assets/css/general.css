@@ -1,5 +1,7 @@
 /* CSS GENERAL */
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #fcf2d9;
   color: #1f1410;
@@ -29,6 +31,20 @@ h3 {
 h4 {
   font-size: 20px;
   text-transform: uppercase;
+}
+
+button {
+  background-color: #d08b35;
+  color: #fcf2d9;
+  border: none;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1f1410;
 }
 
 /* HEADER */
@@ -116,8 +132,216 @@ h4 {
   padding-right: 0;
 }
 
+.container-video {
+  position: relative;
+  width: 100%;
+}
+
+.container-text {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-text {
+  background-color: rgba(252, 242, 217, 0.6);
+  padding: 50px 50px;
+  margin-bottom: 100px;
+}
+
+.banner-h1 {
+  color: #99491c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 70px;
+}
+
+/* Sections */
+
+.immo-prestige-heart {
+  background-color: white;
+}
+
+.section-h2 {
+  padding-bottom: 50px;
+  color: #99491c;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+p span {
+  font-weight: bold;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.row > div[class*="col-"]:not(footer .row > div[class*="col-"]) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.immo-prestige-story-text p,
+.immo-prestige-story-text a {
+  padding-left: 20px;
+}
+
+.immo-prestige-story-text a {
+  align-self: center;
+  margin-top: 20px;
+}
+
+/* cards */
+
+.card {
+  border: none;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+.card-body {
+  background-color: #fcf2d9;
+  border-radius: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.container-card-img:hover .card-img-top {
+  transform: scale(1.3);
+}
+
+.container-card-img:hover .overlay {
+  transform: scale(1 / 1.3);
+}
+
+.container-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(252, 242, 217, 0.6);
+  cursor: pointer;
+}
+
+.overlay-add {
+  font-size: 50px;
+  color: #1f1410;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.container-card-img:hover .overlay-add {
+  color: #d08b35;
+  transform: scale(1.3);
+}
+
+/* carrousel */
+
+.carousel-item img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.carousel-date {
+  font-weight: bold;
+}
+
+.p-italic {
+  font-style: italic;
+}
+
+.bi-quote {
+  font-size: 30px;
+}
+
+.quote-right {
+  float: right;
+}
+
+/* Newsletter */
+
+.form-control-custom {
+  height: 50px;
+}
+
+.input-group-text {
+  background-color: #d08b35;
+  color: #fcf2d9;
+  font-weight: bold;
+  border-radius: 0;
+  border: none;
+}
+
+.form-control {
+  border: none;
+}
+
+/* MEDIA QUERIES */
+
 @media only screen and (max-width: 992px) {
+  /* FOOTER */
   .title-footer {
     margin-top: 50px;
+  }
+
+  /* MAIN */
+
+  /* Section */
+  .immo-prestige-story-text p,
+  .immo-prestige-story-text a {
+    padding-left: 0;
+  }
+
+  .immo-prestige-story-text p:first-child {
+    padding-top: 20px;
+  }
+
+  section {
+    padding-top: 25px;
+  }
+
+  /* banner video */
+  .container-text {
+    width: 90%;
+  }
+
+  .banner-text {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .banner-h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .banner-h2 {
+    font-size: 20px;
   }
 }

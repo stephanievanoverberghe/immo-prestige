@@ -1,288 +1,348 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="/public/assets/css/reset.css" />
-    <link rel="stylesheet" href="/public/assets/css/general.css" />
-    <title>Immo Prestige</title>
-  </head>
-  <body>
-    <!-- Site Navigation -->
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img
-              src="/public/assets/img/logo.png"
-              alt="Logo Immo Prestige"
-              width="100"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Propriété
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/proprietes/liste-propriete.html"
-                      >Liste des propriétés</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/proprietes/propriete-a-la-une.html"
-                      >Propriétés à la une</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  A propos
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/a-propos/notre-histoire.html"
-                      >Notre histoire</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/a-propos/temoignages-clients.html"
-                      >Témoignages clients</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Prestations
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/prestations/evaluation-proprietes.html"
-                      >Évaluation de propriétés</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/prestations/conseils-investissement-immobilier.html"
-                      >Conseils en investissements immobiliers</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/prestations/gestion-propriete.html"
-                      >Gestion de propriété</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/blog/blog.html"
-                  >Blog</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contact
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="/contact/prendre-rdv.html"
-                      >Prendre RDV</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/contact/faq.html">FAQ</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/"
-                  ><i class="bi bi-search"></i
-                ></a>
-              </li>
-            </ul>
-            <div class="d-flex">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="bi bi-person-circle"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="/profil/mon-profil.html"
-                        >Mon profil</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/profil/admin.html"
-                        >Admin</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/">Déconnexion</a>
-                    </li>
-                  </ul>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./../public/assets/css/reset.css" />
+  <link rel="stylesheet" href="./../public/assets/css/general.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https : //fonts.googleapis.com/css2?family= famille= Playfair+Display:ital,wght@0,700;1,700 & display=swap"
+    rel="stylesheet" />
+  <title>Immo Prestige</title>
+</head>
+
+<body>
+  <!-- Site Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./../">
+          <img src="./../public/assets/img/logo.png" alt="Logo Immo Prestige" width="100" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Propriété
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="liste-propriete.html">Liste des propriétés</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="/sign/sign-up.html"
-                    >Inscription</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="/sign/sign-in.html"
-                    >Connexion</a
-                  >
+                <li>
+                  <a class="dropdown-item" href="propriete-a-la-une.html">Propriétés à la une</a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main></main>
-    <footer class="footer mt-5">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-lg-4 text-center">
-            <h4 class="pb-3">Liens rapides</h4>
-            <ul>
-              <li><a href="/">Accueil</a></li>
-              <li>
-                <a href="/proprietes/propriete-a-la-une.html">Propriétés</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                A propos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./../a-propos/notre-histoire.html">Notre histoire</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../a-propos/temoignages-clients.html">Témoignages clients</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prestations
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./../prestations/evaluation-proprietes.html">Évaluation de
+                    propriétés</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../prestations/conseils-investissement-immobilier.html">Conseils en
+                    investissements immobiliers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../prestations/gestion-propriete.html">Gestion de propriété</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/blog/blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./../contact/prendre-rdv.html">Prendre RDV</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../contact/faq.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../"><i class="bi bi-search"></i></a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-person-circle"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./../profil/mon-profil.html">Mon profil</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./../profil/admin.html">Admin</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./../">Déconnexion</a>
+                  </li>
+                </ul>
               </li>
-              <li><a href="/a-propos/notre-histoire.html">A propos</a></li>
-              <li>
-                <a href="/prestations/evaluation-proprietes.html"
-                  >Prestations</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./../sign/sign-up.html">Inscription</a>
               </li>
-              <li><a href="/blog/blog.html">Blog</a></li>
-              <li><a href="/contact/prendre-rdv.html">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./../sign/sign-in.html">Connexion</a>
+              </li>
             </ul>
-          </div>
-          <div class="col-lg-4 text-center">
-            <h4 class="pb-3 title-footer">Informations légales</h4>
-            <ul>
-              <li>
-                <a href="/informations-legales/mentions-legales.html"
-                  >Mentions légales</a
-                >
-              </li>
-              <li>
-                <a href="/informations-legales/politique-confidentialite.html"
-                  >Politique de confidentialité</a
-                >
-              </li>
-              <li>
-                <a href="/informations-legales/cgu.html"
-                  >Conditions générales d'utilisation</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 text-center">
-            <div>
-              <h4 class="pb-3 title-footer">Coordonnées</h4>
-              <p>2 rue des Lilas</p>
-              <p>80000 Amiens - France</p>
-              <p>+33 624 00 00 00</p>
-              <p>contact@immo-prestige.fr</p>
-            </div>
-          </div>
-          <div class="col-12 text-center mt-5">
-            <h4 class="pb-3">Réseaux sociaux</h4>
-            <div class="social-media">
-              <a href="" class="mx-2"><i class="bi bi-facebook"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-instagram"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-linkedin"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-twitter-x"></i></a>
-              <a href="" class="mx-2"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col-12 text-center mt-5 mb-3 copyright">
-            <p>Copyright @immo-prestige2024 - Tous droits réservés</p>
           </div>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <!-- Home Banner -->
+    <div class="container-fluid no-padding">
+      <div class="container-banner-about">
+        <div class="container-text">
+          <div class="banner-text">
+            <h1 class="banner-img-h1">Rencontrez Immo Prestige : Votre Partenaire Immobilier de Confiance</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              Notre Héritage Immobilier : L'Histoire d'Immo Prestige
+            </h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-6">
+            <img src="./../public/assets/img/fondation.jpg" alt="Construction d'une maison">
+          </div>
+          <div class="col-6">
+            <img src="./../public/assets/img/icon-key.png" alt="Icône de clé ancienne">
+            <h3 class="mt-5 mb-4">Fondation et Vision</h3>
+            <p>
+              Immo Prestige a été créée avec l’ambition de devenir une référence dans le monde de l’immobilier de luxe.
+              Dès nos débuts, notre objectif était d’offrir une expérience sur mesure, en parfaite adéquation avec les
+              attentes de nos clients.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-6">
+            <img src="./../public/assets/img/icon-star.png" alt="Icône d'une étoile'">
+            <h3 class="mt-5 mb-4">Croissance et Réputation</h3>
+            <p>
+              À travers les années, nous avons élargi notre portefeuille et consolidé notre
+              réputation en sélectionnant rigoureusement des propriétés qui incarnent le luxe et
+              le raffinement.
+            </p>
+          </div>
+          <div class="col-6">
+            <video src="./../public/assets/videos/about.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <img src="./../public/assets/img/famille-01.jpg" alt="Photo de famille">
+              </div>
+              <div class="col-6">
+                <img src="./../public/assets/img/contrat-01.jpg" alt="Signature de contrat">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <img src="./../public/assets/img/contrat-02.jpg" alt="Poignet de main">
+              </div>
+              <div class="col-6">
+                <img src="./../public/assets/img/famille-02.jpg" alt="Photo de famille">
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="./../public/assets/img/icon-hand-heart.png" alt="Icône de clé ancienne">
+            <h3 class="mt-5 mb-4">Engagement et Service</h3>
+            <p>
+              Chez Immo Prestige, l’engagement envers nos clients est au cœur de tout ce que nous faisons. Nous nous
+              efforçons d’offrir un service qui dépasse les attentes à chaque interaction.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="./../public/assets/img/icon-compass.png" alt="Icône de clé ancienne">
+            <h3 class="mt-5 mb-4">L'avenir d'Immo Prestige</h3>
+            <p>
+              Tournés vers l’avenir, nous continuons d’innover dans nos services et notre
+              approche, en anticipant les tendances du marché pour que nos clients soient
+              toujours un pas en avant.
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="./../public/assets/img/graphic-01.jpg" alt="Photo représentant des graphiques">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="immo-prestige-heart">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              L'Équipe Derrière le Succès
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              Nos Principes Fondamentaux
+            </h2>
+          </div>
+        </div>
+    </section>
+    <section class="immo-prestige-heart">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              Succès Partagés : Témoignages et Réalisations de Nos Clients
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              Engagement Communautaire
+            </h2>
+          </div>
+        </div>
+    </section>
+    <section class="immo-prestige-heart">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              Restons en contact
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <h4 class="pb-3 title-footer">Liens rapides</h4>
+          <ul>
+            <li><a href="../">Accueil</a></li>
+            <li>
+              <a href="./propriete-a-la-une.html">Propriétés</a>
+            </li>
+            <li><a href="./../a-propos/notre-histoire.html">A propos</a></li>
+            <li>
+              <a href="./../prestations/evaluation-proprietes.html">Prestations</a>
+            </li>
+            <li><a href="./../blog/blog.html">Blog</a></li>
+            <li><a href="./../contact/prendre-rdv.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center">
+          <h4 class="pb-3 title-footer">Informations légales</h4>
+          <ul>
+            <li>
+              <a href="./../informations-legales/mentions-legales.html">Mentions légales</a>
+            </li>
+            <li>
+              <a href="./../informations-legales/politique-confidentialite.html">Politique de confidentialité</a>
+            </li>
+            <li>
+              <a href="./../informations-legales/cgu.html">Conditions générales d'utilisation</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div>
+            <h4 class="pb-3 title-footer">Coordonnées</h4>
+            <p class="text-center">2 rue des Lilas</p>
+            <p class="text-center">80000 Amiens - France</p>
+            <p class="text-center">+33 624 00 00 00</p>
+            <p class="text-center">contact@immo-prestige.fr</p>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-5">
+          <h4 class="pb-3 title-footer">Réseaux sociaux</h4>
+          <div class="social-media">
+            <a href="" class="mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-linkedin"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="" class="mx-2"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-12 mt-5 mb-3 copyright">
+          <p class="text-center">Copyright @immo-prestige2024 - Tous droits réservés</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./../public/assets/js/script.js"></script>
+</body>
+
 </html>

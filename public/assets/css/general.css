@@ -182,6 +182,16 @@ button:hover {
   background-attachment: fixed;
 }
 
+.container-banner-about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/agence.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .banner-img-h1 {
   color: #99491c;
   text-transform: uppercase;

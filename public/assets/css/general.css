@@ -172,6 +172,16 @@ button:hover {
   background-attachment: fixed;
 }
 
+.container-banner-heart {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/banner-heart.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .banner-img-h1 {
   color: #99491c;
   text-transform: uppercase;

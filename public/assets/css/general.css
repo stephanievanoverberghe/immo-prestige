@@ -11,7 +11,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Playfair Display", "Times New Roman", serif;
   font-weight: 700;
 }
@@ -32,6 +33,10 @@ h3 {
 h4 {
   font-size: 20px;
   text-transform: uppercase;
+}
+
+h5 {
+  font-size: 18px;
 }
 
 button {
@@ -60,7 +65,8 @@ button:hover {
 }
 
 .nav-link:hover {
-  color: #d08b35 !important;
+  color: #1f1410 !important;
+  background-color: #d08b35;
 }
 
 .dropdown-menu {
@@ -91,6 +97,10 @@ button:hover {
 
 .bi-list {
   font-size: 30px;
+}
+
+.active {
+  background-color: #d08b35 !important;
 }
 
 /* FOOTER */
@@ -379,7 +389,7 @@ section {
   color: #fcf2d9;
 }
 
-/* Formulaires properties */
+/* Formulaires */
 
 .form-check-input {
   border: none;
@@ -417,6 +427,18 @@ section {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.form-control-input {
+  background-color: #fcf2d9;
+  border-radius: 0;
+}
+
+.form-control-input:focus {
+  border-bottom: 2px solid #99491c;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 /* MEDIA QUERIES */

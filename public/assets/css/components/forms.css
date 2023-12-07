@@ -1,0 +1,74 @@
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Newsletter */
+
+.form-control-custom {
+    height: 50px;
+  }
+  
+  .input-group-text {
+    background-color: #d08b35;
+    color: #fcf2d9;
+    font-weight: bold;
+    border-radius: 0;
+    border: none;
+  }
+  
+  .form-control {
+    border: none;
+    box-shadow: none !important;
+  }
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Formulaires */
+
+.form-check-input {
+    border: none;
+  }
+  
+  .form-check-input:focus {
+    box-shadow: none;
+  }
+  
+  .form-check-input:checked {
+    background-color: #99491c;
+  }
+  
+  .form-range::-webkit-slider-runnable-track {
+    background: #1f1410;
+  }
+  
+  .form-range::-moz-range-track {
+    background: #1f1410;
+  }
+  
+  .form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #d08b35;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .form-range::-moz-range-thumb {
+    background: #d08b35;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .form-control-input {
+    background-color: #fcf2d9;
+    border-radius: 0;
+  }
+  
+  .form-control-input:focus {
+    border-bottom: 2px solid #99491c;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }

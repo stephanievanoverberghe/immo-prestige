@@ -1,0 +1,18 @@
+.page-item {
+    margin-right: 10px;
+  }
+  
+  .page-link {
+    border: none;
+    border-radius: 0 !important;
+    color: #1f1410;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .page-link:hover,
+  .page-link:focus {
+    box-shadow: none;
+    background-color: #d08b35;
+    color: #fcf2d9;
+  }

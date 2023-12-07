@@ -1,0 +1,29 @@
+.section-text {
+    padding-left: 30px;
+}
+
+.section-text a {
+    align-self: center;
+    margin-top: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 992px) {
+
+    .section-text {
+        padding-left: 10px;
+    }
+
+    .section-text p:first-child {
+        padding-top: 20px;
+    }
+
+    .carousel-title {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}

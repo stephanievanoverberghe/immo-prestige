@@ -1,0 +1,39 @@
+.footer {
+  background-color: #1f1410;
+  color: #fcf2d9;
+}
+
+.footer a,
+.footer p {
+  color: #fcf2d9;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: #d08b35;
+  text-decoration: none;
+}
+
+.footer h4 {
+  color: #d08b35;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.social-media i {
+  font-size: 25px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 992px) {
+  .title-footer {
+    margin-top: 50px;
+  }
+}

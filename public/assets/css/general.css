@@ -1,3 +1,29 @@
+/* FONT */
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/public/assets/font/OpenSans-Regular.ttf') format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/public/assets/font/OpenSans-Bold.ttf') format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/public/assets/font/PlayfairDisplay-Bold.ttf') format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/public/assets/font/PlayfairDisplay-Regular.ttf') format("truetype");
+  font-weight: 400;
+}
+
 /* CSS GENERAL */
 * {
   box-sizing: border-box;

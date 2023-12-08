@@ -31,14 +31,14 @@
 /* --------------------------------------------------------------------------------------------------------- */
 /* CSS GENERAL */
 
-* {
-  box-sizing: border-box;
+html,
+body {
+  font-family: "Open Sans", "arial", sans-serif;
 }
 
 body {
   background-color: #fcf2d9;
   color: #1f1410;
-  font-family: "Open Sans", "arial", sans-serif;
 }
 
 h1,
@@ -99,10 +99,21 @@ section {
   color: #99491c;
 }
 
-
-.row>div[class*="col-"]:not(form .row > div[class*="col-"]):not(footer .row > div[class*="col-"]) {
+.section-container .section-text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.section-container .section-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.section-img img {
+  max-width: 100%;
+  height: auto;
 }

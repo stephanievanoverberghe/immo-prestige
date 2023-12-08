@@ -163,38 +163,38 @@
             </p>
           </div>
         </div>
-        <form action="" class="my-5">
-          <div class="row">
-            <div class="col-lg-3">
+        <form action="" class="container-form my-5">
+          <div class="row d-lg-flex align-items-center">
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
               <select class="form-select" aria-label="Select localisation">
                 <option selected>Choisir une localisation</option>
 
               </select>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
               <select class="form-select" aria-label="Select type property">
                 <option selected>Type de propriété</option>
               </select>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-6 mb-lg-0 mb-3">
               <select class="form-select" aria-label="Select price">
                 <option selected>Prix</option>
               </select>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-6 mb-lg-0 mb-3">
               <select class="form-select" aria-label="Select statut">
                 <option selected>Statut</option>
 
               </select>
             </div>
-            <div class="col-lg-2">
-              <button id="filterSelector">Filtres</button>
+            <div class="col-lg-2 mt-lg-0 mt-3 d-lg-block d-flex justify-content-center">
+              <button id="filterSelector"><i class="bi bi-funnel"></i></button>
             </div>
           </div>
         </form>
-        <form action="" class="display-none" id="searchForm">
-          <div class="row form-search-property">
-            <div class="col-lg-3">
+        <form action="">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
               <div class="row">
                 <div class="col-lg-12">
                   <h3 class="mb-3">Type de propriété</h3>
@@ -272,9 +272,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="row">
-                <h3 class="mb-3 mt-lg-0 mt-5">Chambres</h3>
+                <h3 class="mb-3 mt-md-0 mt-5">Chambres</h3>
                 <div class="col-lg-6">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioBedroom1">
@@ -358,7 +358,7 @@
             <div class="col-lg-6">
               <div class="row">
                 <h3 class="mb-3 mt-lg-0 mt-5">Caractéristiques spéciales</h3>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckView">
                     <label class="form-check-label" for="flexCheckView">
@@ -384,7 +384,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckGarage">
                     <label class="form-check-label" for="flexCheckGarage">
@@ -410,7 +410,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
                     <label class="form-check-label" for="flexCheckDisabled">
@@ -454,7 +454,7 @@
           <div class="row">
             <div class="col-lg-12">
               <h3 class="mt-5 mb-3">Tri</h3>
-              <div class="d-lg-flex">
+              <div class="d-flex justify-content-md-start flex-lg-row flex-column">
                 <div class="form-check me-lg-5">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioPertinence" checked>
                   <label class="form-check-label" for="flexRadioPertinence">
@@ -488,11 +488,11 @@
               </div>
             </div>
           </div>
-          <div class="row mt-5 mb3">
-            <div class="col-lg-6 d-flex justify-content-end">
+          <div class="row mt-5 mb-3">
+            <div class="col-lg-6 d-flex justify-content-lg-end justify-content-md-center mb-md-3 mb-lg-0 mb-3">
               <button>Tout Effacer</button>
             </div>
-            <div class="col-lg-6 d-flex justify-content-start">
+            <div class="col-lg-6 d-flex justify-content-lg-start justify-content-md-center">
               <button>Correspondance (1 252)</button>
             </div>
           </div>
@@ -517,7 +517,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/maison-moderne.jpg"
                     alt="Intérieur d'une maison moderne en centre ville" class="card-img-top" />
                   <div class="overlay">
@@ -543,7 +543,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/maison-campagne.jpg" alt="Maison de campagne" class="card-img-top" />
                   <div class="overlay">
                     <div class="overlay-heart">
@@ -568,7 +568,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/maison-vue-mer.jpg" alt="Maison avec vur sur la mer"
                     class="card-img-top" />
                   <div class="overlay">
@@ -594,7 +594,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/loft-urbain.jpg" alt="Loft urbain" class="card-img-top" />
                   <div class="overlay">
                     <div class="overlay-heart">
@@ -619,7 +619,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/villa-piscine.jpg" alt="Villa luxueuse avec piscine"
                     class="card-img-top" />
                   <div class="overlay">
@@ -645,7 +645,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/duplex-spacieux.jpg" alt="Duplex familial spacieux"
                     class="card-img-top" />
                   <div class="overlay">
@@ -671,7 +671,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/villa-piscine.jpg" alt="Villa luxueuse avec piscine"
                     class="card-img-top" />
                   <div class="overlay">
@@ -697,7 +697,7 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="container-card-img">
-                <a href="./featured-properties.html">
+                <a href="./properties-details.html">
                   <img src="./../public/assets/img/duplex-spacieux.jpg" alt="Duplex familial spacieux"
                     class="card-img-top" />
                   <div class="overlay">

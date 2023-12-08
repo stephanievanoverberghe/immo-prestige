@@ -1,0 +1,54 @@
+.container-banner-properties {
+    position: relative;
+}
+
+.container-heart {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #1f1410;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.container-heart:hover {
+    color: #d08b35;
+    transform: scale(1.3);
+}
+
+.section-img-properties img {
+    width: 100%;
+    height: auto;
+}
+
+.section-img-properties {
+    padding: 50px 0;
+}
+
+.section-img-properties a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #99491c;
+    font-family: 'playfair display', serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.section-img-properties a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1f1410;
+}
+
+.google-maps iframe {
+    width: 100%;
+}
+
+.section-contact-agent img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* MEDIA QUERIES */

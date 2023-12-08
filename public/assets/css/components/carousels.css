@@ -1,20 +1,20 @@
 .carousel-item img {
-    border-radius: 50%;
-    width: 50%;
-  }
-  
-  .carousel-date {
-    font-weight: bold;
-  }
-  
-  .p-italic {
-    font-style: italic;
-  }
-  
-  .bi-quote {
-    font-size: 30px;
-  }
-  
-  .quote-right {
-    float: right;
-  }
+  border-radius: 50%;
+  width: 50%;
+}
+
+.carousel-date {
+  font-weight: bold;
+}
+
+.p-italic {
+  font-style: italic;
+}
+
+.bi-quote {
+  font-size: 30px;
+}
+
+.quote-right {
+  float: right;
+}

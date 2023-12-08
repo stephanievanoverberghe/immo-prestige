@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./../public/assets/css/reset.css">
+    <link rel="stylesheet" href="./../public/assets/css/general.css">
+    <link rel="stylesheet" href="./../public/assets/css/pages/properties-details.css">
+    <link rel="stylesheet" href="./../public/assets/css/components/buttons.css">
+    <link rel="stylesheet" href="./../public/assets/css/components/navbar.css">
+    <link rel="stylesheet" href="./../public/assets/css/components/banner.css">
+    <link rel="stylesheet" href="./../public/assets/css/components/cards.css">
+    <link rel="stylesheet" href="./../public/assets/css/components/forms.css">
+    <link rel="stylesheet" href="./../public/assets/css/components/footer.css">
+    <title>Immo Prestige</title>
+</head>
+
+<body>
+    <!-- Site Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../">
+                    <img src="./../public/assets/img/logo.png" alt="Logo Immo Prestige" width="100" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown active-link me-lg-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Propriété
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="list-properties.html">Liste des propriétés</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="featured-properties.html">Propriétés à la une</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-lg-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                A propos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./../about/our-history.html">Notre histoire</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./../about/testimonials.html">Témoignages clients</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-lg-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Prestations
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./../performances/property-valuation.html">Évaluation
+                                        de
+                                        propriétés</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./../performances/investment-advice.html">Conseils en
+                                        investissements immobiliers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./../performances/property-management.html">Gestion
+                                        de propriété</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" aria-current="page" href="./../blog/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown me-lg-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./../contact/appointment.html">Prendre RDV</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./../contact/faq.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" aria-current="page" href="../"><i class="bi bi-search"></i></a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown me-lg-3">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="./../profile/my-profile.html">Mon profil</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./../profile/admin.html">Admin</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./../">Déconnexion</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link" aria-current="page" href="./../sign/sign-up.html">Inscription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./../sign/sign-in.html">Connexion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner -->
+        <div class="container-fluid no-padding">
+            <div class="container-banner-properties">
+                <div class="container-heart">
+                    <div class="icon-heart">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel pictures -->
+        <section class="section-img-properties">
+            <div class="container">
+                <div class="row img-properties d-flex justify-content-end">
+                    <div class="col-lg-1 col-md-3 col-4 mb-lg-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 1">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-4 mb-md-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 2">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-4 mb-md-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 3">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-4 mb-lg-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 4">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-4 mb-md-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 5">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-4 mb-md-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 6">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-4 d-none d-md-block mb-md-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 7">
+                    </div>
+                    <div class="col-lg-1 col-md-3 col-4 d-none d-md-block mb-md-0 mb-3">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 8">
+                    </div>
+                    <div class="col-lg-1 d-none d-lg-block">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 9">
+                    </div>
+                    <div class="col-lg-1 col-4 d-none d-lg-block">
+                        <img src="./../public/assets/img/banner-heart.jpg" alt="Photo 10">
+                    </div>
+                </div>
+                <div class="row mt-5 align-items-center">
+                    <div class="col-lg-8 col-12 order-2 order-lg-1 mt-5 mt-lg-0">
+                        <div class="d-md-flex justify-content-between d-flex flex-md-row flex-column text-center">
+                            <a href="#" class="mb-md-0 mb-3">Description</a>
+                            <a href="#" class="mb-md-0 mb-3">Informations clés</a>
+                            <a href="#">Caractéristiques</a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center order-1 order-lg-2">
+                        <button>Contacter l'agence</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Property description -->
+        <section class="section-white section-property-description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-h2">
+                            Élégance Côtière
+                        </h2>
+                        <h3>
+                            Appartement de 3 chambres avec vue panoramique sur la mer
+                        </h3>
+                    </div>
+                    <div class="col-lg-6 mb-lg-0 mb-5 text-lg-start text-center">
+                        <h4>Descriptif complet</h4>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            Cet appartement en front de mer est une véritable oasis de tranquillité, offrant une vue
+                            panoramique sur les vagues azurées depuis chaque fenêtre. L’intérieur est un modèle de
+                            modernité et de confort, avec un salon spacieux qui s’ouvre sur un balcon invitant, parfait
+                            pour savourer les couchers de soleil. Les trois chambres sont des havres de paix, la
+                            principale bénéficiant d’une salle de bain attenante et d’un dressing. La cuisine est
+                            équipée des dernières technologies, prête à accueillir vos repas gastronomiques. À quelques
+                            pas de la plage et des commodités locales, cet appartement est un choix idéal pour ceux qui
+                            cherchent à combiner style de vie balnéaire et confort moderne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- key information -->
+        <section class="section section-key-information">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-lg-0 mb-lg-3 mb-5 text-lg-start text-center">
+                        <h4>Informations clés</h4>
+                    </div>
+                    <div class="col-lg-6 text-md-start text-center">
+                        <div class="row ">
+                            <div class="col-lg-4 col-md-6">
+                                <span>Prix</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">350 000 €</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Chambres</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">3 dont une suite parentale avec salle de bain</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Salles de bains</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">2, finitions haut de gamme</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Surface</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">120 m2 habitables</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Terrasse/Balcon</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">Grand balcon avec vue mer</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Équipements</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">Cuisine entièrement équipé, climatisation, système
+                                    de sécurité</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Localisation</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">A deux minutes à pied de la plage, proche des
+                                    commerces et
+                                    restaurants</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Particularités</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <p class="text-md-start text-center">Place de parking privée, accès à une piscine
+                                    commune, espaces
+                                    verts soignés dans la résidence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Special features -->
+        <section class="section section-white section-special-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-lg-0 mb-lg-3 mb-5 text-lg-start text-center">
+                        <h4>Carctéristiques spéciales</h4>
+
+                    </div>
+                    <div class="col-lg-6 text-md-start text-center">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <span>Vue panoramique</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">Profitez d'une vue dégagée sur l'océan depuis
+                                    toutes les pièces
+                                    principales</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Balcon spacieux</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">Un espace extérieur pour dîner ou se détendre face
+                                    à la mer</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Accès direct plage</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">Descendez de chez vous et marchez quelques pas pour
+                                    vous
+                                    retrouver sur le sable</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Finitions de luxe</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">Des matériaux et des équipements de haute qualité
+                                    pour un
+                                    confort inégalé</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <span>Sécurité</span>
+                            </div>
+                            <div class="col-lg-8 col-md-6 mb-3">
+                                <p class="text-md-start text-center">Un environnement sécurisé avec un système de
+                                    surveillance
+                                    avancé</p>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="text-md-start text-center">L'appartement est situé au dernier étage pour une
+                                    intimité et une vue optimales.</p>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="text-md-start text-center">Il y a un parking souterrain avec ascenseur direct
+                                    à l'appartement.</p>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-md-start text-center">Les espaces communs incluent une piscine à
+                                    débordement, un jardin paysager et une
+                                    salle de fitness.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Google maps -->
+        <div class="container-fluid google-maps no-padding">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82240.01966279314!2d2.2022812066413775!3d49.89879178352962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78413d78b760b%3A0x40af13e816220e0!2sAmiens!5e0!3m2!1sfr!2sfr!4v1702053946279!5m2!1sfr!2sfr"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- Neighborhood -->
+        <section class="section section-neighborhood">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="section-h2">
+                            Découvrez le Charme du Quartier
+                        </h2>
+                        <p>
+                            Situé dans un quartier prisé pour son ambiance sereine et sa proximité avec la nature, cet
+                            appartement offre un équilibre parfait entre vie urbaine et retraite balnéaire. Le quartier
+                            se distingue par ses charmants bistrots en bord de mer, ses marchés locaux proposant des
+                            produits frais, et ses parcs verdoyants idéaux pour les après-midis détente. Les résidents
+                            bénéficient d’un accès facile aux écoles réputées, aux centres de bien-être et à une variété
+                            d’activités culturelles. Cette communauté dynamique et accueillante constitue un lieu de vie
+                            idéal pour ceux qui cherchent la tranquillité à quelques pas de l’effervescence citadine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Agent -->
+        <section class="section section-white section-contact-agent">
+            <div class="container">
+                <div class="row mb-5 section-container">
+                    <div class="col-12">
+                        <h2 class="text-center section-h2">
+                            Contactez Notre Agent pour Plus d'Informations
+                        </h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 d-flex justify-content-center">
+                                <img src="./../public/assets/img/marc-dupont.jpg" alt="Marc Dupont, agent immobilier">
+                            </div>
+                            <div class="col-lg-8 text-lg-start text-center">
+                                <h3 class="mb-lg-2 mt-lg-0 mt-4 my-md-3">Marc Dupont</h3>
+                                <p class="text-lg-start mt-lg-0 mt-2 text-center">Avec plus de 10 ans d'expérience dans
+                                    le marché
+                                    immobilier
+                                    local, je suis dédié à
+                                    trouver la propriété parfaite pour chaque client.</p>
+                                <p class="text-lg-start text-center"><span>Téléphone :</span> +33 123 45 57 89</p>
+                                <p class="text-lg-start text-center"><span>Email :</span>
+                                    marc.dupont@immo-prestige.fr</p>
+                                <div class="col-lg-12">
+                                    <h4 class="mt-5 mb-3">Horaires de disponiblité</h4>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="text-lg-start text-center"><span>Du lundi au vendredi :</span> 9h00 -
+                                        18h00</p>
+                                    <p class="text-lg-start text-center"><span>Le samedi :</span> 10h00 - 15h00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="text-center mt-5 mb-3">Formulaire de contact</h4>
+                <form>
+                    <div class="offset-lg-2 col-lg-8">
+                        <div class="my-4">
+                            <label for="name" class="mb-2">Entrez votre nom</label>
+                            <input type="text" class="form-control form-control-input" id="name">
+                        </div>
+                        <div class="my-4">
+                            <label for="tel" class="mb-2">Entrez votre téléphone</label>
+                            <input type="tel" class="form-control form-control-input" id="tel">
+                        </div>
+                        <div class="my-4">
+                            <label for="email" class="mb-2">Entrez votre email</label>
+                            <input type="email" class="form-control form-control-input" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="mb-2">Entrez votre message</label>
+                            <textarea class="form-control form-control-input" id="message"
+                                style="height: 200px"></textarea>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button>Prendre rdv avec Marc</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h4 class="pb-3 title-footer">Liens rapides</h4>
+                    <ul>
+                        <li><a href="../">Accueil</a></li>
+                        <li>
+                            <a href="./list-properties.html">Propriétés</a>
+                        </li>
+                        <li><a href="./../about/our-history.html">A propos</a></li>
+                        <li>
+                            <a href="./../performances/property-valuation.html">Prestations</a>
+                        </li>
+                        <li><a href="./../blog/blog.html">Blog</a></li>
+                        <li><a href="./../contact/appointment.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h4 class="pb-3 title-footer">Informations légales</h4>
+                    <ul>
+                        <li>
+                            <a href="./../legal-information/legal-notice.html">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="./../legal-information/privacy-policy.html">Politique de confidentialité</a>
+                        </li>
+                        <li>
+                            <a href="./../legal-information/terms-of-service.html">Conditions générales
+                                d'utilisation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div>
+                        <h4 class="pb-3 title-footer">Coordonnées</h4>
+                        <p class="text-center">2 rue des Lilas</p>
+                        <p class="text-center">80000 Amiens - France</p>
+                        <p class="text-center">+33 624 00 00 00</p>
+                        <p class="text-center">contact@immo-prestige.fr</p>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <h4 class="pb-3 title-footer">Réseaux sociaux</h4>
+                    <div class="social-media">
+                        <a href="" class="mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="mx-2"><i class="bi bi-instagram"></i></a>
+                        <a href="" class="mx-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="" class="mx-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="" class="mx-2"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 mb-3 copyright">
+                    <p class="text-center">Copyright @immo-prestige2024 - Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./../public/assets/js/script.js"></script>
+</body>
+
+</html>

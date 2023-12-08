@@ -25,7 +25,7 @@
     padding: 50px 0;
 }
 
-.section-img-properties a:not(.button) {
+.nav-link-description {
     text-decoration: none;
     text-transform: uppercase;
     color: #99491c;
@@ -34,7 +34,7 @@
     font-weight: 700;
 }
 
-.section-img-properties a:hover:not(.button) {
+.nav-link-description:hover {
     text-decoration: none;
     text-transform: uppercase;
     color: #1f1410;

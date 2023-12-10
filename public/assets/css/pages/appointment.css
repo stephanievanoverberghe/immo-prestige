@@ -1,0 +1,19 @@
+.social-media i {
+    color: #1f1410;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #1f1410;
+    font-weight: bold;
+}
+
+.social-media a:hover,
+.social-media i:hover {
+    color: #d08b35;
+}
+
+.google-maps {
+    background-color: white;
+    padding: 100px 0 0 0;
+}

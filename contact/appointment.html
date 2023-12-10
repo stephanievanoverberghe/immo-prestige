@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="./../public/assets/css/general.css">
   <link rel="stylesheet" href="./../public/assets/css/components/navbar.css">
   <link rel="stylesheet" href="./../public/assets/css/components/banner.css">
+  <link rel="stylesheet" href="./../public/assets/css/components/forms-marron.css">
+  <link rel="stylesheet" href="./../public/assets/css/components/buttons.css">
+  <link rel="stylesheet" href="./../public/assets/css/components/iframe.css">
+  <link rel="stylesheet" href="./../public/assets/css/pages/appointment.css">
   <link rel="stylesheet" href="./../public/assets/css/components/footer.css">
   <title>Immo Prestige</title>
 </head>
@@ -132,14 +136,128 @@
   <main>
     <!-- Home Banner -->
     <div class="container-fluid no-padding">
-      <div class="container-banner">
+      <div class="container-banner container-banner-appointment">
         <div class="container-text">
           <div class="banner-text">
-            <h1 class="banner-img-h1">En construction</h1>
+            <h1 class="banner-img-h1">Nous sommes là pour vous aider</h1>
           </div>
         </div>
       </div>
     </div>
+    <!-- Contact -->
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5 section-container">
+          <div class="col-12">
+            <h2 class="text-center section-h2">
+              Restons en contact
+            </h2>
+            <p>
+              Nous sommes à votre disposition pour répondre à toutes vos questions ou discuter de vos besoins
+              immobiliers. N’hésitez pas à nous contacter via le formulaire ci-dessous, par téléphone, ou en nous
+              rendant visite à notre agence. Chez Immo Prestige, votre projet immobilier est notre priorité et nous
+              sommes impatients de collaborer avec vous.
+            </p>
+          </div>
+          <div class="col-lg-12 section-text">
+            <h4 class="mt-5 mb-3">Coordonnées directes</h4>
+          </div>
+          <div class="col-lg-12 section-text">
+            <p><span>Téléphone :</span> +33 624000000</p>
+            <p><span>Email :</span> contact@immo-prestige.fr</p>
+            <p><span>Adresse :</span> 2 rue des Lilas - 80000 Amiens - France</p>
+          </div>
+        </div>
+        <h4 class="text-center mt-5 mb-3">Formulaire de contact</h4>
+        <form>
+          <div class="offset-lg-2 col-lg-8">
+            <div class="my-4">
+              <label for="name" class="mb-2">Entrez votre nom</label>
+              <input type="text" class="form-control form-control-input" id="name">
+            </div>
+            <div class="my-4">
+              <label for="tel" class="mb-2">Entrez votre téléphone</label>
+              <input type="tel" class="form-control form-control-input" id="tel">
+            </div>
+            <div class="my-4">
+              <label for="email" class="mb-2">Entrez votre email</label>
+              <input type="email" class="form-control form-control-input" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="mb-2">Entrez votre message</label>
+              <textarea class="form-control form-control-input" id="message" style="height: 200px"></textarea>
+            </div>
+            <div class="text-center mt-4">
+              <button>Prendre rdv</button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col mt-5">
+            <h4 class="text-center mt-5 mb-3">Pour des réponses rapides à vos questions, consultez notre page FAQ</h4>
+            <div class="text-center mt-4">
+              <button>Consultez notre FAQ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Agency -->
+    <div class="google-maps">
+      <h2 class="text-center section-h2">Trouvez notre agence</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82240.01966279314!2d2.2022812066413775!3d49.89879178352962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78413d78b760b%3A0x40af13e816220e0!2sAmiens!5e0!3m2!1sfr!2sfr!4v1702053946279!5m2!1sfr!2sfr"
+        height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Hours Agency -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">Nos histoire pour vous accueillir</h2>
+          </div>
+          <div class="col-12">
+            <p class="text-center"><span>Du lundi au vendredi :</span> 9h00 -
+              18h00</p>
+            <p class="text-center"><span>Le samedi :</span> 10h00 - 15h00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-white ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-h2">Nos histoire pour vous accueillir</h2>
+          </div>
+          <div class="col-md-6 col-12 social-media">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <a href="" class="mx-2"><i class="bi bi-facebook me-3"></i>Suivez-nous sur Facebook</a>
+              </div>
+              <div class="col-12 mb-4">
+                <a href="" class="mx-2"><i class="bi bi-instagram me-3"></i>Rejoignez notre communauté sur Instagram</a>
+              </div>
+              <div class="col-12 mb-4">
+                <a href="" class="mx-2"><i class="bi bi-linkedin me-3"></i>Connectez-vous avec nous sur LinkedIn</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-12 social-media">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <a href="" class="mx-2"><i class="bi bi-youtube me-3"></i>Regardez nos dernières vidéos sur YouTube</a>
+              </div>
+              <div class="col-12 mb-4">
+                <a href="" class="mx-2"><i class="bi bi-twitter-x me-3"></i>Suivez nos actualités sur Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer pt-5">
     <div class="container">

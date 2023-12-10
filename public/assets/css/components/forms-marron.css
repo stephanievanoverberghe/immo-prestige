@@ -1,0 +1,21 @@
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* Formulaires */
+
+form h3 {
+    font-size: 20px;
+}
+
+.form-control-input {
+    border: none;
+    background-color: white;
+    border-radius: 0;
+}
+
+.form-control-input:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #99491c;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}

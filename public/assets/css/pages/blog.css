@@ -1,0 +1,11 @@
+a {
+    color: #1f1410;
+}
+
+a:hover {
+    color: #d08b35;
+}
+
+.categories i {
+    font-size: 30px;
+}

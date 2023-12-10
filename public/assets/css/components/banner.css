@@ -36,30 +36,21 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../../img/maison-vue-mer.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.container-banner-list-properties {
+  background-image: url("../../img/maison-vue-mer.jpg");
 }
 
 .container-banner-heart {
-  position: relative;
-  width: 100%;
-  height: 100vh;
   background-image: url("../../img/banner-heart.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .container-banner-about {
-  position: relative;
-  width: 100%;
-  height: 100vh;
   background-image: url("../../img/agence.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .container-banner-properties {
@@ -68,6 +59,18 @@
   height: 60vh;
   background: url("../../img/appartement-01.jpg") center;
   background-size: cover;
+}
+
+.container-banner-appointment {
+  background-image: url("../../img/banner-contact.jpg");
+}
+
+.container-banner-blog {
+  background-image: url("../../img/banner-blog.jpg");
+}
+
+.container-banner-article {
+  background-image: url("../../img/blog-renover.jpg");
 }
 
 .banner-img-h1 {

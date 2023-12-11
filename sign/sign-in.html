@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./../public/assets/css/general.css">
   <link rel="stylesheet" href="./../public/assets/css/components/navbar.css">
   <link rel="stylesheet" href="./../public/assets/css/components/banner.css">
+  <link rel="stylesheet" href="./../public/assets/css/components/forms-marron.css">
+  <link rel="stylesheet" href="./../public/assets/css/components/buttons.css">
   <link rel="stylesheet" href="./../public/assets/css/components/footer.css">
   <title>Immo Prestige</title>
 </head>
@@ -135,16 +137,44 @@
     </nav>
   </header>
   <main>
-    <!-- Home Banner -->
-    <div class="container-fluid no-padding">
-      <div class="container-banner">
-        <div class="container-text">
-          <div class="banner-text">
-            <h1 class="banner-img-h1">En construction</h1>
+    <!-- Formulaire d'inscription' -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="banner-img-h1 text-center mb-5">Formulaire de connexion</h1>
           </div>
+
         </div>
+        <form action="" class="mt-5">
+          <div class="offset-lg-2 col-lg-8">
+            <div class="my-4">
+              <label for="email" class="mb-2">Entrez votre email</label>
+              <input type="email" class="form-control form-control-input" id="email">
+            </div>
+            <div class="my-4">
+              <label for="password" class="mb-2">Entrez votre mot de passe</label>
+              <input type="password" class="form-control form-control-input" id="password">
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="checkbox" value="" id="flexLegalesMentions">
+              <label class="form-check-label" for="flexLegalesMentions">
+                Se souvenir de moi
+              </label>
+            </div>
+            <div class="text-center mt-4">
+              <button>Connexion</button>
+            </div>
+            <div class="text-center mt-5">
+              Mot de passe perdu ? <a href="#">Réinitialisez votre mot de passe</a>
+            </div>
+            <div class="text-center mt-3">
+              Pas encore membre ? <a href="./sign-up.html">Inscrivez-vous ici</a>
+            </div>
+          </div>
+        </form>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="footer pt-5">
     <div class="container">
